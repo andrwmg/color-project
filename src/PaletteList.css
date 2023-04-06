@@ -1,0 +1,47 @@
+.PaletteList {
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.PaletteList-container {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.PaletteList-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+.PaletteList-nav a {
+    color:white;
+    text-decoration: none;
+    padding: .75rem 1rem;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.PaletteList-palettes {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-gap: 5%;
+}
+
+.fade-exit {
+    opacity: 1;
+    transition: opacity 500ms ease-out
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-out
+}
